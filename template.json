@@ -1,6 +1,42 @@
 [
   {
     "type": 2,
+    "title": "Zendserver 2018 PHP7.2",
+    "description": "Zendserver 2018 PHP7.2",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/portainer/portainer.git",
+      "stackfile": "stacks/gdl_zendserver2018.yml"
+    },
+    "env": [
+      {
+        "name": "VOLUME_USERNAME",
+        "label": "USERNAME",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "PORT_HTTPS",
+        "label": "HTTPS SECURE port number",
+        "default": "31001"
+      },
+    ]
+  },
+  {
+    "type": 2,
     "title": "Zanotti",
     "description": "Percona 5.6 - Nginx - PHP 5.6 - Redis (work in progress)",
     "note": "",
