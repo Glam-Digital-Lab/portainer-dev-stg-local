@@ -32,6 +32,11 @@
         "name": "PORT_HTTPS",
         "label": "HTTPS SECURE port number",
         "default": "31001"
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "TLD: web.loc local1 web2.loc local2 gdl.glamdigitallab.it DEV/STG",
+        "default": "web.loc"
       }
     ]
   },
