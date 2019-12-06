@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: tsuglam/zendserver:2018.14beta
+    image: tsuglam/zendserver:2018.16beta
     ports:
       - 443
       - 10081
