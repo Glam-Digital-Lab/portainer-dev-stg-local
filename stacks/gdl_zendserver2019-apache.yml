@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: thesiteup/docker-zendserver:2019.0-7.3-apache
+    image: tsuglam/zendserver:2019.0-7.3-apache
     ports:
       - 443
       - 10081
