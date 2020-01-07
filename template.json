@@ -1,4 +1,329 @@
 [
+  [
+  {
+    "type": 2,
+    "title": "Magento 2 - Nginx - PHP 7.1 - Redis",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/2019/magento2-nginx-php71.yml"
+    },
+    "env": [
+      {
+        "name": "VOLUME_USERNAME",
+        "label": "USERNAME",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [
+          {
+            "text": "Enable",
+            "value": "true"
+          },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "Magento 2 - Nginx - PHP 7.2 - Redis",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/2019/magento2-nginx-php72.yml"
+    },
+    "env": [
+      {
+        "name": "VOLUME_USERNAME",
+        "label": "USERNAME",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [
+          {
+            "text": "Enable",
+            "value": "true"
+          },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "Magento 2 - Nginx - PHP 7.3 - Redis",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/2019/magento2-nginx-php73.yml"
+    },
+    "env": [
+      {
+        "name": "VOLUME_USERNAME",
+        "label": "USERNAME",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [
+          {
+            "text": "Enable",
+            "value": "true"
+          },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "Magento 2 - Apache - PHP 7.1 - Redis",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/2019/magento2-apache-php71.yml"
+    },
+    "env": [
+      {
+        "name": "VOLUME_USERNAME",
+        "label": "USERNAME",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [
+          {
+            "text": "Enable",
+            "value": "true"
+          },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "Magento 2 - Apache - PHP 7.2 - Redis",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/2019/magento2-apache-php72.yml"
+    },
+    "env": [
+      {
+        "name": "VOLUME_USERNAME",
+        "label": "USERNAME",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [
+          {
+            "text": "Enable",
+            "value": "true"
+          },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "Magento 2 - Apache - PHP 7.3 - Redis",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/gdl_zendserver2019-apache.yml"
+    },
+    "env": [
+      {
+        "name": "VOLUME_USERNAME",
+        "label": "USERNAME",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [
+          {
+            "text": "Enable",
+            "value": "true"
+          },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
   {
     "type": 2,
     "title": "Zendserver 2018 PHP7.2",
