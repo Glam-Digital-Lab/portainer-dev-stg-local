@@ -313,8 +313,8 @@
 	},
 	{
 		"type": 2,
-		"title": "Zendserver 2018 PHP7.2",
-		"description": "Zendserver 2018 PHP7.2",
+		"title": "GDL Zendserver 2018 PHP7.2",
+		"description": "GDL Zendserver 2018 PHP7.2",
 		"note": "",
 		"categories": ["Web"],
 		"platform": "linux",
@@ -397,7 +397,7 @@
 	},
 	{
 		"type": 2,
-		"title": "Magento 2 - Apache",
+		"title": "Magento 2 - Apache (OLD)",
 		"description": "Percona 5.7 - Zend Server 9.1 - Apache - PHP 7.1 - Redis",
 		"note": "",
 		"categories": [
@@ -441,7 +441,7 @@
 	},
 	{
 		"type": 2,
-		"title": "Magento 2 - Nginx",
+		"title": "Magento 2 - Nginx (OLD)",
 		"description": "Zend Server 9.1 - Nginx - PHP 7.1 - Redis",
 		"note": "",
 		"categories": [
@@ -480,7 +480,7 @@
 	},
 	{
 		"type": 2,
-		"title": "Magento 2 - PHP 7.2 - Nginx",
+		"title": "Magento 2 - PHP 7.2 - Nginx (OLD)",
 		"description": "Nginx - PHP 7.2 - Redis",
 		"note": "",
 		"categories": [
@@ -519,7 +519,7 @@
 	},
 	{
 		"type": 2,
-		"title": "Magento 2 - Nginx - Varnish",
+		"title": "Magento 2 - Nginx - Varnish (OLD - Nowt Working)",
 		"description": "Percona 5.7 - Zend Server 9.1 - Nginx - PHP 7.1 - Redis - Varnish 4.1.10",
 		"note": "",
 		"categories": [
