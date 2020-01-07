@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+  web:
+    image: thesiteup/docker-zendserver:2019.0-7.3-apache
+    ports:
+      - 443
+      - 10081
+      - 1080
+    environment:
+      USERNAME: ${VOLUME_USERNAME}
+      #WEBSERVER_TEMPLATE: magento2
+      ZEND_LICENSE_KEY: CT92AG108028319F007671923E8ED9BA
+      ZEND_LICENSE_ORDER: 190913
+      ZS_ADMIN_PASSWORD: qwerty
+      VIRTUAL_HOST: web-${VOLUME_PROJECT}-${VOLUME_USERNAME}.${URL_DOMAIN},admin-${VOLUME_PROJECT}-${VOLUME_USERNAME}.${URL_DOMAIN}
+      HTTPS_METHOD: redirect
+      VIRTUAL_PROTO: https
+      VIRTUAL_PORT: 443
+      ENABLE_CRON: ${ENABLE_CRON}
+    networks:
+      - default
+      - overshare
+    volumes:
+      - /dockerdata/${VOLUME_USERNAME}/${VOLUME_PROJECT}/${VOLUME_WEBDATA}/:/var/www
+      - /dockerdata/${VOLUME_USERNAME}/.composer/:/var/www/.composer
+      - /dockerdata/${VOLUME_USERNAME}/.ssh/:/usr/share/nginx/.ssh
+    restart: always
+    privileged: true
+  redis:
+    image: redis:4.0
+    restart: always
+    privileged: true
+networks:
+  overshare:
+    external:
+      name: overshare
