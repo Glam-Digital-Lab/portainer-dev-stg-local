@@ -261,15 +261,15 @@
 	},
 	{
 		"type": 2,
-		"title": "Magento 2 - Apache - PHP 7.3 - Redis",
+		"title": "GENERAL PURPOSE && Magento 2 - Apache - PHP 7.3 - Redis",
 		"description": "",
 		"note": "",
 		"categories": ["Web"],
 		"platform": "linux",
 		"logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
 		"repository": {
-			"url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
-			"stackfile": "stacks/gdl_zendserver2019-apache.yml"
+			"url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+			"stackfile": "gdl_zendserver2019-apache.yml"
 		},
 		"env": [{
 				"name": "VOLUME_USERNAME",
