@@ -1,7 +1,7 @@
 [
     {
 		"type": 2,
-		"title": "Magento 2 - Nginx - PHP 7.1 - Redis",
+		"title": "GENERAL PURPOSE && Magento 2 - Nginx - PHP 7.1 - Redis",
 		"description": "",
 		"note": "",
 		"categories": ["Web"],
@@ -53,7 +53,7 @@
 	},
 	{
 		"type": 2,
-		"title": "Magento 2 - Nginx - PHP 7.2 - Redis",
+		"title": "GENERAL PURPOSE && Magento 2 - Nginx - PHP 7.2 - Redis",
 		"description": "",
 		"note": "",
 		"categories": ["Web"],
@@ -105,7 +105,7 @@
 	},
 	{
 		"type": 2,
-		"title": "Magento 2 - Nginx - PHP 7.3 - Redis",
+		"title": "GENERAL PURPOSE && Magento 2 - Nginx - PHP 7.3 - Redis",
 		"description": "",
 		"note": "",
 		"categories": ["Web"],
@@ -157,7 +157,7 @@
 	},
 	{
 		"type": 2,
-		"title": "Magento 2 - Apache - PHP 7.1 - Redis",
+		"title": "GENERAL PURPOSE && Magento 2 - Apache - PHP 7.1 - Redis",
 		"description": "",
 		"note": "",
 		"categories": ["Web"],
@@ -209,7 +209,7 @@
 	},
 	{
 		"type": 2,
-		"title": "Magento 2 - Apache - PHP 7.2 - Redis",
+		"title": "GENERAL PURPOSE && Magento 2 - Apache - PHP 7.2 - Redis",
 		"description": "",
 		"note": "",
 		"categories": ["Web"],
@@ -314,7 +314,7 @@
 	{
 		"type": 2,
 		"title": "GDL Zendserver 2018 PHP7.2",
-		"description": "GDL Zendserver 2018 PHP7.2",
+		"description": "GDL Zendserver 2018 PHP7.2 - Apache - Redis 3.0",
 		"note": "",
 		"categories": ["Web"],
 		"platform": "linux",
