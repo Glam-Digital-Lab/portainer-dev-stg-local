@@ -269,7 +269,7 @@
 		"logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
 		"repository": {
 			"url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
-			"stackfile": "gdl_zendserver2019-apache.yml"
+			"stackfile": "stacks/gdl_zendserver2019-apache.yml"
 		},
 		"env": [{
 				"name": "VOLUME_USERNAME",
