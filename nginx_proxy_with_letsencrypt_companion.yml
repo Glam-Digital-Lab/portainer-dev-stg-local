@@ -1,0 +1,36 @@
+version: '3'
+
+services:
+  nginx-proxy:
+    image: thesiteup/docker:nginx-proxy
+    container_name: nginx-proxy
+    labels:
+        com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy: "true"
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - /var/run/docker.sock:/tmp/docker.sock:ro
+      - /dockerdata/nginx-proxy/cert:/etc/nginx/certs
+      - /dockerdata/nginx-proxy/htpasswd:/etc/nginx/htpasswd
+      - /dockerdata/nginx-proxy/vhost.d:/etc/nginx/vhost.d
+      - /dockerdata/nginx-proxy/dhparam:/etc/nginx/dhparam
+      - /dockerdata/nginx-proxy/html:/usr/share/nginx/html
+    networks:
+     - default
+     - overshare
+  letsencrypt:
+   image: jrcs/letsencrypt-nginx-proxy-companion
+   container_name: nginx-proxy-le
+   volumes:
+     - /var/run/docker.sock:/var/run/docker.sock:ro
+     - /dockerdata/nginx-proxy/cert:/etc/nginx/certs
+     - /dockerdata/nginx-proxy/vhost.d:/etc/nginx/vhost.d
+     - /dockerdata/nginx-proxy/dhparam:/etc/nginx/dhparam
+     - /dockerdata/nginx-proxy/html:/usr/share/nginx/html
+   networks:
+     - overshare
+networks:
+  overshare:
+    external:
+      name: overshare
