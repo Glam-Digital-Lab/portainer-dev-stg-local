@@ -832,7 +832,7 @@
 		"platform": "linux",
 		"logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mysql.png",
 		"repository": {
-			"url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+			"url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
 			"stackfile": "stacks/db/percona57.yml"
 		},
 		"env": [{
