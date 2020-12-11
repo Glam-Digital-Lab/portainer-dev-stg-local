@@ -783,6 +783,26 @@
 	},
 	{
 		"type": 2,
+		"title": "Mysql Percona 8 - HIGH PERFORMANCE",
+		"description": "",
+		"note": "",
+		"categories": [
+			"Web"
+		],
+		"platform": "linux",
+		"logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mysql.png",
+		"repository": {
+			"url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+			"stackfile": "stacks/db/mysql8.yml"
+		},
+		"env": [{
+			"name": "PORT_MYSQL",
+			"label": "MYSQL port number",
+			"default": "31001"
+		}]
+	},
+	{
+		"type": 2,
 		"title": "Mysql Percona 5.6 - HIGH PERFORMANCE",
 		"description": "",
 		"note": "",
