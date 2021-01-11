@@ -2,6 +2,7 @@ version: '3'
 
 services:
   web:
+    #image: tsuglam/zendserver:2018.16beta
     image: tsuglam/zendserver:2020.4-7.3-apache
     ports:
       - 443
@@ -9,28 +10,44 @@ services:
       - 1080
     environment:
       USERNAME: ${VOLUME_USERNAME}
-      #WEBSERVER_TEMPLATE: magento2
       ZEND_LICENSE_KEY: DA82B0108028316FF2AC5129CBC8B254
       ZEND_LICENSE_ORDER: 197351
       ZS_ADMIN_PASSWORD: qwertyGDL123!!
       VIRTUAL_HOST: web-${VOLUME_PROJECT}-${VOLUME_USERNAME}.${URL_DOMAIN},admin-${VOLUME_PROJECT}-${VOLUME_USERNAME}.${URL_DOMAIN}
+      LETSENCRYPT_HOST: web-${VOLUME_PROJECT}-${VOLUME_USERNAME}.${URL_DOMAIN},admin-${VOLUME_PROJECT}-${VOLUME_USERNAME}.${URL_DOMAIN}
       HTTPS_METHOD: redirect
       VIRTUAL_PROTO: https
       VIRTUAL_PORT: 443
       ENABLE_CRON: ${ENABLE_CRON}
+      TEST: 2
     networks:
-      - default
-      - overshare
+     - default
+     - overshare
     volumes:
-      - /dockerdata/${VOLUME_USERNAME}/${VOLUME_PROJECT}/${VOLUME_WEBDATA}/:/var/www
+      - /dockerdata/${VOLUME_USERNAME}/${VOLUME_PROJECT}/${VOLUME_WEBDATA}/:/var/www/
       - /dockerdata/${VOLUME_USERNAME}/.composer/:/var/www/.composer
       - /dockerdata/${VOLUME_USERNAME}/.ssh/:/usr/share/nginx/.ssh
     restart: always
     privileged: true
   redis:
-    image: redis:4.0
+    image: redis:5
     restart: always
     privileged: true
+  elasticsearch:
+    image: elasticsearch:7.9.0
+    container_name: elasticsearch
+    environment:
+      ES_JAVA_OPTS: '-Xms256m -Xmx256m'
+      network.bind_host: 0.0.0.0
+      network.host: 0.0.0.0
+      discovery.type: single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    networks:
+      - default
+      - overshare
 networks:
   overshare:
     external:
