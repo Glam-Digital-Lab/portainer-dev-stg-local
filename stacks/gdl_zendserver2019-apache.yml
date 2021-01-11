@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: tsuglam/zendserver:2020.0-7.3-apache
+    image: tsuglam/zendserver:2020.4-7.3-apache
     ports:
       - 443
       - 10081
