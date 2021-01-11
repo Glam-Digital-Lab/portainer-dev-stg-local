@@ -3,7 +3,8 @@ version: '3'
 services:
   web:
     #image: tsuglam/zendserver:2018.16beta
-    image: tsuglam/zendserver:2020.4-7.3-apache
+    image: tsuglam/zendserver:2020.3-7.4-apache
+    ### error is php7.3 but is the version 4 of the image
     ports:
       - 443
       - 10081
