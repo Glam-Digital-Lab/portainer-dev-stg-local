@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: tsuglam/zendserver:2020-php7.1
+    image: tsuglam/zendserver:2021v1-php7.1
     ports:
       - ${PORT_HTTPS}:443
       - 10081
