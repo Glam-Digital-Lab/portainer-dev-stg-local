@@ -2,15 +2,15 @@ version: '3'
 
 services:
   web:
-    image: thesiteup/docker-zendserver:9-php7.1
+    image: tsuglam/zendserver:2020-php7.1
     ports:
       - ${PORT_HTTPS}:443
       - 10081
       - 1080
     environment:
       USERNAME: ${VOLUME_USERNAME}
-      ZEND_LICENSE_KEY: CT92AG108028319F007671923E8ED9BA
-      ZEND_LICENSE_ORDER: 190913
+      ZEND_LICENSE_KEY: DA82B0108028316FF2AC5129CBC8B254
+      ZEND_LICENSE_ORDER: 197351
       ZS_ADMIN_PASSWORD: QAZwsx123GDL!!
       VIRTUAL_HOST: web-${VOLUME_PROJECT}-${VOLUME_USERNAME}.${URL_DOMAIN}
       LETSENCRYPT_HOST: web-${VOLUME_PROJECT}-${VOLUME_USERNAME}.${URL_DOMAIN}
