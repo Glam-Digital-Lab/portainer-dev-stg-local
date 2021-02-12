@@ -1,0 +1,52 @@
+version: '3'
+
+services:
+  web:
+    image: tsuglam/apache-php:7.4
+    ports:
+      - 443
+    environment:
+      USERNAME: ${VOLUME_USERNAME}
+      VIRTUAL_HOST: web-${VOLUME_PROJECT}-${VOLUME_USERNAME}.${URL_DOMAIN},admin-${VOLUME_PROJECT}-${VOLUME_USERNAME}.${URL_DOMAIN}
+      HTTPS_METHOD: redirect
+      VIRTUAL_PROTO: https
+      VIRTUAL_PORT: 443
+      ENABLE_CRON: ${ENABLE_CRON}
+      APPLICATION_USER: ${VOLUME_USERNAME}
+      CONTAINER_UID: ${VOLUME_USERNAME}
+    networks:
+      - default
+      - overshare
+    volumes:
+      - /dockerdata/${VOLUME_USERNAME}/${VOLUME_PROJECT}/${VOLUME_WEBDATA}/html:/app/
+    restart: always
+    privileged: true
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - 8025
+    networks:
+      - default
+      - overshare
+  redis:
+    image: redis:6.0
+    restart: always
+    privileged: true
+  elasticsearch:
+    image: elasticsearch:7.9.0
+    environment:
+      ES_JAVA_OPTS: '-Xms256m -Xmx256m'
+      network.bind_host: 0.0.0.0
+      network.host: 0.0.0.0
+      discovery.type: single-node
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    networks:
+      - default
+      - overshare  
+networks:
+  overshare:
+    external:
+      name: overshare
