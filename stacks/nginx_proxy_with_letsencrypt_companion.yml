@@ -2,7 +2,7 @@ version: '3'
 
 services:
   nginx-proxy:
-    image: thesiteup/docker:nginx-proxy
+    image: jwilder/nginx-proxy
     container_name: nginx-proxy
     labels:
         com.github.jrcs.letsencrypt_nginx_proxy_companion.nginx_proxy: "true"
@@ -20,7 +20,7 @@ services:
      - default
      - overshare
   letsencrypt:
-   image: jrcs/letsencrypt-nginx-proxy-companion
+   image: jrcs/letsencrypt-nginx-proxy-companion:latest
    container_name: nginx-proxy-le
    volumes:
      - /var/run/docker.sock:/var/run/docker.sock:ro
