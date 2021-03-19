@@ -6,7 +6,7 @@
 		"note": "",
 		"categories": ["Web"],
 		"platform": "linux",
-		"logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+		"logo": "https://www.akeneo.com/wp-content/uploads/2015/12/akeneo.png",
 		"repository": {
 			"url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
 			"stackfile": "stacks/akeneo-php74-xdebug.yml"
