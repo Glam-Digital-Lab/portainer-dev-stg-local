@@ -2,7 +2,7 @@ version: '3'
 
 services:
   web:
-    image: tsuglam/apache-php:7.2-xdebug
+    image: tsuglam/php-apache:7.2-xdebug
     ports:
       - 443
     environment:
