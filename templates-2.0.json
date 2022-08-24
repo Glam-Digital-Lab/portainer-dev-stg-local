@@ -2,6 +2,58 @@
   "version": "2",
   "templates": [
     {
+    "type": 2,
+    "title": "GENERAL PURPOSE && Magento 2 - Apache - PHP 8.1 - Redis 6 - Elastic 7.9.0 XDEBUG",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/develop-general-purpose-apache-php81.yaml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [{
+          "text": "Enable",
+          "value": "true"
+        },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },  
+    {
       "type": 1,
       "title": "Registry",
       "description": "Docker image registry",
