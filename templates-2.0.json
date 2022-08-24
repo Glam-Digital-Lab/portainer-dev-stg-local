@@ -3,6 +3,191 @@
   "templates": [
     {
     "type": 2,
+    "title": "Mysql Percona 8 - HIGH PERFORMANCE",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mysql.png",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/db/mysql8.yml"
+    },
+    "env": [{
+      "name": "PORT_MYSQL",
+      "label": "MYSQL port number",
+      "default": "31001"
+    }]
+  },
+  {
+    "type": 2,
+    "title": "Mysql Percona 5.6 - HIGH PERFORMANCE",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mysql.png",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/db/percona56.yml"
+    },
+    "env": [{
+      "name": "PORT_MYSQL",
+      "label": "MYSQL port number",
+      "default": "31001"
+    }]
+  },
+  {
+    "type": 2,
+    "title": "Mysql Percona 5.6 - Low Performance",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mysql.png",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/db/percona56-low.yml"
+    },
+    "env": [{
+      "name": "PORT_MYSQL",
+      "label": "MYSQL port number",
+      "default": "31001"
+    }]
+  },
+  {
+    "type": 2,
+    "title": "Mysql Percona 5.7 - HIGH PERFORMANCE",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mysql.png",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/db/percona57.yml"
+    },
+    "env": [{
+      "name": "PORT_MYSQL",
+      "label": "MYSQL port number",
+      "default": "31001"
+    }]
+  },
+  {
+    "type": 2,
+    "title": "Mysql Percona 5.7 - Low Performance",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mysql.png",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/db/percona57-low.yml"
+    },
+    "env": [{
+      "name": "PORT_MYSQL",
+      "label": "MYSQL port number",
+      "default": "31001"
+    }]
+  },
+  {
+    "type": 2,
+    "title": "MariaDB 10.1 - HIGH PERFORMANCE",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mariadb.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/db/mariadb101.yml"
+    },
+    "env": [{
+      "name": "PORT_MYSQL",
+      "label": "MYSQL port number",
+      "default": "31001"
+    }]
+  },
+  {
+    "type": 2,
+    "title": "MariaDB 10.1 - Low Performance",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mariadb.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/db/mariadb101-low.yml"
+    },
+    "env": [{
+      "name": "PORT_MYSQL",
+      "label": "MYSQL port number",
+      "default": "31001"
+    }]
+  },
+  {
+    "type": 2,
+    "title": "Elasticsearch 5.6.10",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/elasticsearch.png",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/elastic/elastic-5.6.10.yml"
+    }
+  },
+  {
+    "type": 2,
+    "title": "Elasticsearch 5.6.10 with plugins",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/elasticsearch.png",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/elastic/elastic-5.6.10-plugin.yml"
+    }
+  },
+  {
+    "type": 2,
+    "title": "Elasticsearch 6.3.2",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/elasticsearch.png",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/elastic/elastic-6.3.2.yml"
+    }
+  },
+    {
+    "type": 2,
     "title": "GENERAL PURPOSE && Magento 2 - Apache - PHP 7.1 - Redis 6",
     "description": "",
     "note": "",
