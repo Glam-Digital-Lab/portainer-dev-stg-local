@@ -1,0 +1,1386 @@
+{
+"version": 2,
+"templates": 
+[
+  {
+    "type": 2,
+    "title": "GENERAL PURPOSE && Magento 2 - Apache - PHP 8.1 - Redis 6 - Elastic 7.9.0 XDEBUG",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/develop-general-purpose-apache-php81.yaml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [{
+          "text": "Enable",
+          "value": "true"
+        },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "GENERAL PURPOSE && Magento 2 - Apache - PHP 8.1 - Redis 6 - Elastic 7.9.0",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/general-purpose-apache-php81.yaml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [{
+          "text": "Enable",
+          "value": "true"
+        },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "GENERAL PURPOSE && Magento 2 - Apache - PHP 7.1 - Redis 6",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/develop-general-purpose-apache-php74.yaml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [{
+          "text": "Enable",
+          "value": "true"
+        },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "AKENEO 5 - Apache - PHP 7.4 - Redis 6 - Elastic 7.9.0 XDEBUG",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "https://www.akeneo.com/wp-content/uploads/2015/12/akeneo.png",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/akeneo-php74-xdebug.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [{
+          "text": "Enable",
+          "value": "true"
+        },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "GENERAL PURPOSE && Magento 2 - Apache - PHP 7.4 - Redis 6 - Elastic 7.9.0 XDEBUG",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/develop-general-purpose-apache-php74.yaml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [{
+          "text": "Enable",
+          "value": "true"
+        },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "GENERAL PURPOSE && Magento 2 - Apache - PHP 7.2 - Redis 6 - Elastic 7.9.0 XDEBUG - NO ZEND",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/develop-general-purpose-apache-php72-xdebug.yaml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [{
+          "text": "Enable",
+          "value": "true"
+        },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "GENERAL PURPOSE && Magento 2 - Apache - PHP 7.4 - Redis 6 - Elastic 7.9.0",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/production-general-purpose-apache-php74.yaml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [{
+          "text": "Enable",
+          "value": "true"
+        },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "General purpose Zend Server 9 + Apache + PHP 7.1",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/gdl_general_purpose_zend_server9-php71.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "PORT_HTTPS",
+        "label": "HTTPS SECURE port number",
+        "default": "31001"
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "GENERAL PURPOSE && Magento 2 - Nginx - PHP 7.1 - Redis",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/2019/magento2-nginx-php71.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [{
+          "text": "Enable",
+          "value": "true"
+        },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "GENERAL PURPOSE && Magento 2 - Nginx - PHP 7.2 - Redis",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/2019/magento2-nginx-php72.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [{
+          "text": "Enable",
+          "value": "true"
+        },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "GENERAL PURPOSE && Magento 2 - Nginx - PHP 7.3 - Redis",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/2019/magento2-nginx-php73.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [{
+          "text": "Enable",
+          "value": "true"
+        },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "GENERAL PURPOSE && Magento 2 - Apache - PHP 7.1 - Redis",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/2019/magento2-apache-php71.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [{
+          "text": "Enable",
+          "value": "true"
+        },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "GENERAL PURPOSE && Magento 2 - Apache - PHP 7.2 - Redis",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/2019/magento2-apache-php72.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [{
+          "text": "Enable",
+          "value": "true"
+        },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "GENERAL PURPOSE && Magento 2 - Apache - PHP 7.3 - Redis",
+    "description": "",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/gdl_zendserver2019-apache.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "ENABLE_CRON",
+        "label": "Enable Cron (be sure it is safe)",
+        "description": "",
+        "select": [{
+          "text": "Enable",
+          "value": "true"
+        },
+          {
+            "text": "Disable",
+            "value": "false",
+            "default": true
+          }
+        ]
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "GDL Zendserver 2018 PHP7.2",
+    "description": "GDL Zendserver 2018 PHP7.2 - Apache - Redis 3.0",
+    "note": "",
+    "categories": ["Web"],
+    "platform": "linux",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/gdl_zendserver2018.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "PORT_HTTPS",
+        "label": "HTTPS SECURE port number",
+        "default": "31001"
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "TLD: web.loc local1 web2.loc local2 gdl.glamdigitallab.it DEV/STG",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "Zanotti",
+    "description": "Percona 5.6 - Nginx - PHP 5.6 - Redis (work in progress)",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/zanotti.png",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/zanotti/zanotti-php56.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "PORT_HTTPS",
+        "label": "HTTPS SECURE port number",
+        "default": "31001"
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy) web/weboutseason",
+        "description": "",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "Magento 2 - Apache (OLD)",
+    "description": "Percona 5.7 - Zend Server 9.1 - Apache - PHP 7.1 - Redis",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/php71mysql57/docker-stack-magento2.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "PORT_HTTPS",
+        "label": "HTTPS SECURE port number",
+        "default": "31001"
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "Magento 2 - Nginx (OLD)",
+    "description": "Zend Server 9.1 - Nginx - PHP 7.1 - Redis",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/php71mysql57/docker-stack-magento2-nginx.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "Magento 2 - PHP 7.2 - Nginx (OLD)",
+    "description": "Nginx - PHP 7.2 - Redis",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/php72/docker-stack-magento2-nginx.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "Magento 2 - Nginx - Varnish (OLD - Nowt Working)",
+    "description": "Percona 5.7 - Zend Server 9.1 - Nginx - PHP 7.1 - Redis - Varnish 4.1.10",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/magento2.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/php71mysql57/docker-stack-magento2-nginx-varnish.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "PORT_HTTPS",
+        "label": "HTTPS SECURE port number",
+        "default": "31001"
+      },
+      {
+        "name": "PORT_HTTPS_VARNISH",
+        "label": "VARNISH HTTPS SECURE port number",
+        "default": "31002"
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "General purpose Zend Server 8 + Apache + PHP 5.6 + Percona 5.6 HP",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/php56mysql56/docker-stack.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "PORT_HTTPS",
+        "label": "HTTPS SECURE port number",
+        "default": "31001"
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "General purpose Zend Server 9 + Nginx + PHP 7.0 + Percona 5.7 HP",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/php70mysql57/docker-stack-nginx.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "PORT_HTTPS",
+        "label": "HTTPS SECURE port number",
+        "default": "31001"
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "General purpose Zend Server 9 + Nginx + PHP 7.1 + Percona 5.7 HP",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/php71mysql57/docker-stack-nginx.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "PORT_HTTPS",
+        "label": "HTTPS SECURE port number",
+        "default": "31001"
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "General purpose Zend Server 2018 + Nginx + PHP 7.2",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/php72/docker-stack-nginx.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    },
+      {
+        "name": "VOLUME_PROJECT",
+        "label": "PROJECT",
+        "description": "",
+        "default": ""
+      },
+      {
+        "name": "VOLUME_WEBDATA",
+        "label": "folder USERNAME/PROJECT/webdata",
+        "default": "webdata"
+      },
+      {
+        "name": "URL_DOMAIN",
+        "label": "URL_DOMAIN (proxy)",
+        "description": "DELL: web.loc / LOCAL: docker.loc",
+        "default": "web.loc"
+      }
+    ]
+  },
+  {
+    "type": 2,
+    "title": "Mysql Percona 8 - HIGH PERFORMANCE",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mysql.png",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/db/mysql8.yml"
+    },
+    "env": [{
+      "name": "PORT_MYSQL",
+      "label": "MYSQL port number",
+      "default": "31001"
+    }]
+  },
+  {
+    "type": 2,
+    "title": "Mysql Percona 5.6 - HIGH PERFORMANCE",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mysql.png",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/db/percona56.yml"
+    },
+    "env": [{
+      "name": "PORT_MYSQL",
+      "label": "MYSQL port number",
+      "default": "31001"
+    }]
+  },
+  {
+    "type": 2,
+    "title": "Mysql Percona 5.6 - Low Performance",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mysql.png",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/db/percona56-low.yml"
+    },
+    "env": [{
+      "name": "PORT_MYSQL",
+      "label": "MYSQL port number",
+      "default": "31001"
+    }]
+  },
+  {
+    "type": 2,
+    "title": "Mysql Percona 5.7 - HIGH PERFORMANCE",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mysql.png",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/db/percona57.yml"
+    },
+    "env": [{
+      "name": "PORT_MYSQL",
+      "label": "MYSQL port number",
+      "default": "31001"
+    }]
+  },
+  {
+    "type": 2,
+    "title": "Mysql Percona 5.7 - Low Performance",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mysql.png",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/db/percona57-low.yml"
+    },
+    "env": [{
+      "name": "PORT_MYSQL",
+      "label": "MYSQL port number",
+      "default": "31001"
+    }]
+  },
+  {
+    "type": 2,
+    "title": "MariaDB 10.1 - HIGH PERFORMANCE",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mariadb.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/db/mariadb101.yml"
+    },
+    "env": [{
+      "name": "PORT_MYSQL",
+      "label": "MYSQL port number",
+      "default": "31001"
+    }]
+  },
+  {
+    "type": 2,
+    "title": "MariaDB 10.1 - Low Performance",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/mariadb.jpg",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/db/mariadb101-low.yml"
+    },
+    "env": [{
+      "name": "PORT_MYSQL",
+      "label": "MYSQL port number",
+      "default": "31001"
+    }]
+  },
+  {
+    "type": 2,
+    "title": "Elasticsearch 5.6.10",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/elasticsearch.png",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/elastic/elastic-5.6.10.yml"
+    }
+  },
+  {
+    "type": 2,
+    "title": "Elasticsearch 5.6.10 with plugins",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/elasticsearch.png",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/elastic/elastic-5.6.10-plugin.yml"
+    }
+  },
+  {
+    "type": 2,
+    "title": "Elasticsearch 6.3.2",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/elasticsearch.png",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/elastic/elastic-6.3.2.yml"
+    }
+  },
+  {
+    "type": 2,
+    "title": "Mr. Jenkins, to serve",
+    "description": "",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "logo": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2/raw/master/logo/jenkins.png",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/jenkins/docker-stack.yml"
+    },
+    "env": [{
+      "name": "VOLUME_USERNAME",
+      "label": "USERNAME",
+      "description": "",
+      "default": ""
+    }]
+  },
+  {
+    "type": 2,
+    "title": "Nginx Proxy with LE Companion",
+    "description": "Nginx Proxy with LE Companion (auto renew certificate - USE this in valid .TLD",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "repository": {
+      "url": "https://gitlab.glamdigitallab.it:10021/root/portainer.git",
+      "stackfile": "stacks/ nginx_proxy_with_letsencrypt_companion.yml"
+    }
+  },
+  {
+    "type": 2,
+    "title": "Nginx Proxy",
+    "description": "Nginx Proxy",
+    "note": "",
+    "categories": [
+      "Web"
+    ],
+    "platform": "linux",
+    "repository": {
+      "url": "http://docker-services.thesiteup-dev.com:31001/portainer/portainer2.git",
+      "stackfile": "stacks/tools/nginx-proxy.yml"
+    }
+  }
+]
+}
