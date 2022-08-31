@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  db:
+    image: percona:5.6
+    ports:
+      - ${PORT_MYSQL}:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: "qwerty"
+    command: --log-bin-trust-function-creators=1 --max-allowed-packet=512M --query-cache-size=0 --query-cache-type=0 --max-connections=10000 --thread-cache-size=0 --open-files-limit=95535 --table-definition-cache=4096 --table-open-cache=2000 --join-buffer-size=50M --tmp-table-size=1024M --max-heap-table-size=1G --max-allowed-packet=1G --myisam-sort-buffer-size=512M --key-buffer-size=512M --read-buffer-size=50M --read-rnd-buffer-size=50M --sort-buffer-size=256M --thread-cache-size=1000 --innodb-data-file-path=ibdata1:10M:autoextend --innodb-flush-method=O_DIRECT --innodb-log-files-in-group=2 --innodb-log-file-size=1024M --innodb-log-buffer-size=256M --innodb-flush-log-at-trx-commit=2 --innodb-file-per-table=1 --innodb-buffer-pool-size=2048M --innodb-flush-neighbors=0 --innodb-buffer-pool-instances=16 --innodb-read-io-threads=16 --innodb-write-io-threads=16 --innodb-io-capacity=2000 --innodb-concurrency-tickets=1000 --innodb-lock-wait-timeout=120 --thread-pool-size=16 --innodb-doublewrite=0 --wait-timeout=28000 --innodb-strict-mode=0
+    volumes:
+       - mysql_data:/var/lib/mysql
+    restart: always
+    privileged: true
+    networks:
+     - default
+     - overshare
+  phpmyadmin:
+    image: thesiteup/docker:phpmyadmin
+    ports:
+     - 80
+    environment:
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: qwerty
+    restart: always
+    privileged: true
+volumes:
+  mysql_data:
+networks:
+  overshare:
+    external:
+      name: overshare
